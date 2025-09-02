@@ -15,7 +15,7 @@ import { connectCloudinary } from './config/cloudinary.js';
 const app = express();
 connectDB();
 connectCloudinary();
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = ["http://localhost:5173","https://grocery-app-2o59.vercel.app/"];
 // midlewares
 app.use(cors({origin:allowedOrigins, credentials: true}));
 app.use(cookieParser());
