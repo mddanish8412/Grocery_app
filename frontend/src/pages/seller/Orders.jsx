@@ -34,7 +34,7 @@ const Orders = () => {
           <div className="flex gap-5">
             <img
               className="w-12 h-12 object-cover opacity-60"
-              src={`https://grocery-backend-zt79.onrender.com/images/${order.items[0].product.image[0]}`}
+              src={`https://grocery-bckend.onrender.com/images/${order.items[0].product.image[0]}`}
               alt="boxIcon"
             />
             <>
