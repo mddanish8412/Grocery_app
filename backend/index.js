@@ -30,7 +30,15 @@ app.use("/api/product",productRoutes );
 app.use("/api/cart",cartRoutes );
 app.use("/api/order",OrderRoutes );
 app.use("/api/address",addressRoutes );
-const PORT = process.env.PORT || 4000;
+
+const PORT = process.env.PORT || 5000;
+
+app.get("/", (req, res)=>{
+    res.send({
+        message: "Welcome to Grocery App",
+        error: false
+    });
+})
 
 app.listen(PORT, ()=>{
     //connectDB();
