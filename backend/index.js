@@ -15,7 +15,7 @@ import { connectCloudinary } from './config/cloudinary.js';
 const app = express();
 connectDB();
 connectCloudinary();
-const allowedOrigins = ["https://grocery-fphanf1pk-mddanish8412s-projects.vercel.app"];
+const allowedOrigins = ["https://grocery-frontend-ysbo.onrender.com"];
 // midlewares
 app.use(cors({origin:allowedOrigins, credentials: true}));
 app.use(cookieParser());
